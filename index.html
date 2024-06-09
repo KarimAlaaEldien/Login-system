@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Registration page">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Sign up</title>
+</head>
+
+<body>
+    <div class="container text-center vh-100 d-flex justify-content-center align-items-center">
+        <div class="row justify-content-center  ">
+            <div class="col-lg-12">
+                <form id="registration">
+                        <div class="formContent py-5 px-4 my-border rounded-4">
+                            <h1>Smart Login System</h1>
+                            <input id="nameInput" oninput="validatinput(this)" class="form-control my-input my-3 "
+                                placeholder="Enter your Name" type="text">
+                            <div class="alert alert-danger p-1 d-none" id="nAlert">
+                                <small>name must start with a capital letter and be no more than 12 letters</small>
+                            </div>
+                            <input id="emailInput" oninput="validatinput(this)" class="form-control my-input my-3 "
+                                placeholder="Enter your email" type="text">
+                            <div class="alert alert-danger p-1 d-none" id="eAlert">
+                                <small>The email must not begin with a number and must be in the email format</small>
+                            </div>
+                            <input id="passwordInput" oninput="validatinput(this)" class="form-control my-input my-3 "
+                                placeholder="Enter your password" type="password">
+                            <div class="alert alert-danger p-1 d-none " id="pAlert">
+                                <small>The password must start with a capital letter and contain
+                                    small letters, numbers and special characters (#,$,%,&,*,_) and not less than 8 characters.</small>
+                            </div>
+                            <p id="textInfo"class="m-0"></p>
+                            <button class="btn btn-outline-info w-100 my-3 ">Sign Up</button>
+                            <p class="text-white">You have an account? <a href='./login/login.html'
+                                    class='my-anchor text-white'>Sign
+                                    in</a></p>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./signup/js/bootstrap.bundle.min.js"></script>
+    <script src="./signup/js/signup.js"></script>
+</body>
+
+</html>

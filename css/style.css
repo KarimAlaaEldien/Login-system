@@ -1,0 +1,58 @@
+body {
+    background-image: url(../images/cover.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Titillium Web', sans-serif;
+}
+.my-nav{
+    border-bottom: 1px solid #ffffff4f;
+}
+.my-border{
+    border: 1px solid rgb(182, 182, 182);
+    backdrop-filter: blur(15px);
+}
+.btn-outline-warning {
+    --bs-btn-color: #fbff3b;
+    --bs-btn-hover-color: #fff;
+}
+a.logo, footer p{
+    color: #fbff3b;
+}
+.navbar{
+    --bs-navbar-toggler-focus-width: 0;
+}
+h1 {
+    color: #14e7ff;
+}
+.formContent, .my-nav {
+    box-shadow: -5px 2px 54px -9px #2196F3;
+}
+.formContent p a.my-anchor{
+    text-decoration: none;
+}
+.formContent p a.my-anchor:hover{
+    text-decoration: underline;
+}
+input.form-control.my-input{
+    background-color: transparent ;
+    color: #fff ;
+}
+input.form-control.my-input::placeholder{
+    color: rgb(182, 182, 182);
+}
+.formContent p#wrongValue, p#textInfo{
+    color: #edff00;
+}
+input:focus{
+    box-shadow: 0 0 0 0 transparent !important;
+}
+@media all and (max-width: 992px) {
+    a#logout{
+        width: 100%;
+        margin-top: 5px;
+    }
+} 
+.my-container{
+    height: 75vh;
+}
